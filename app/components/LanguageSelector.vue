@@ -23,7 +23,7 @@
           <MenuItem v-slot="{ active }" v-for="lang in languages">
             <div
               @click="changeLanguage(lang)"
-              class="block flex items-center px-4 py-1 text-charcoal-gray hover:text-light-gray hover:bg-charcoal-gray cursor-pointer first:rounded-t-md last:rounded-b-md"
+              class="block items-center px-4 py-1 text-charcoal-gray hover:text-light-gray hover:bg-charcoal-gray cursor-pointer first:rounded-t-md last:rounded-b-md"
             >
               <component :is="lang.icon" class="h-8 w-8" />
               <span class="ml-2">{{ lang.name }}</span>
