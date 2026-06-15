@@ -10,21 +10,21 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/i18n": "10.2.4",
-    "nuxt": "4.4.2",
-    "sass": "1.99.0",
-    "vue": "3.5.32",
-    "vue-router": "5.0.4"
+    "@nuxtjs/i18n": "10.4.0",
+    "nuxt": "4.4.8",
+    "sass": "1.101.0",
+    "vue": "3.5.38",
+    "vue-router": "5.1.0"
   },
   "dependencies": {
     "@headlessui/vue": "1.7.23",
     "@heroicons/vue": "2.2.0",
-    "@tailwindcss/vite": "4.2.2",
-    "@tsparticles/all": "^4.0.5",
-    "@tsparticles/engine": "^4.0.5",
-    "@tsparticles/nuxt4": "^4.0.5",
-    "@tsparticles/slim": "^4.0.5",
-    "tailwindcss": "4.2.2"
+    "@tailwindcss/vite": "4.3.1",
+    "@tsparticles/all": "4.1.3",
+    "@tsparticles/engine": "4.1.3",
+    "@tsparticles/nuxt4": "4.1.3",
+    "@tsparticles/slim": "4.1.3",
+    "tailwindcss": "4.3.1"
   },
   "resolutions": {
     "string-width": "4.2.3"
