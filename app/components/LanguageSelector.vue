@@ -18,12 +18,12 @@
       leave-from-class="transform opacity-100 scale-100"
       leave-to-class="transform opacity-0 scale-95"
     >
-      <MenuItems class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-turquoise shadow-lg focus:outline-none">
+      <MenuItems class="absolute right-0 z-10 mt-2 min-w-36 origin-top-right rounded-md bg-turquoise shadow-lg focus:outline-none">
         <div class="py-0">
           <MenuItem v-slot="{ active }" v-for="lang in languages">
             <div
               @click="changeLanguage(lang)"
-              class="block items-center px-4 py-1 text-charcoal-gray hover:text-light-gray hover:bg-charcoal-gray cursor-pointer first:rounded-t-md last:rounded-b-md"
+              class="flex items-center px-4 py-1 text-charcoal-gray hover:text-light-gray hover:bg-charcoal-gray cursor-pointer first:rounded-t-md last:rounded-b-md"
             >
               <component :is="lang.icon" class="h-8 w-8" />
               <span class="ml-2">{{ lang.name }}</span>
