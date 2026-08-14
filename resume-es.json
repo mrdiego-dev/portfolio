@@ -1,0 +1,254 @@
+{
+  "name": "Diego Méndez Rivera",
+  "meta": {
+    "format": "FRESH@0.6.0"
+  },
+  "info": {
+    "label": "Ingeniero de Software",
+    "brief": "Ingeniero de Software con más de 8 años de experiencia en el desarrollo de aplicaciones web, especializado en tecnologías frontend y backend. Autodidacta y comprometido con el aprendizaje continuo, con un enfoque en la creación de interfaces intuitivas, eficientes y fáciles de usar."
+  },
+  "contact": {
+    "email": "diego.mz.rv@gmail.com",
+    "phone": "(+502) 3325 0858",
+    "website": "https://portfolio.mr-diego.dev"
+  },
+  "location": {
+    "country": "GT"
+  },
+  "social": [
+    {
+      "network": "LinkedIn",
+      "user": "diego-m-rivera",
+      "url": "https://www.linkedin.com/in/diego-m-rivera/"
+    },
+    {
+      "network": "GitHub",
+      "user": "DiegoMMR",
+      "url": "https://github.com/DiegoMMR"
+    }
+  ],
+  "employment": {
+    "history": [
+      {
+        "employer": "FullStack Labs",
+        "position": "Ingeniero de Software Senior",
+        "start": "2025-06",
+        "summary": "Proyecto del cliente: SIDEARM Sports — Desarrollador Frontend trabajando en plataformas web para organizaciones deportivas universitarias, con un enfoque en crear experiencias frontend escalables, responsivas, accesibles y fáciles de mantener.",
+        "highlights": [
+          "Desarrollo y mantenimiento de aplicaciones frontend con Vue.js, Nuxt, TypeScript, JavaScript, HTML y SCSS.",
+          "Contribución a la migración de sitios web de Vue.js a Nuxt, modernizando la arquitectura frontend y mejorando el mantenimiento y los flujos de desarrollo.",
+          "Creación y mantenimiento de componentes reutilizables y paquetes frontend compartidos entre múltiples sitios web.",
+          "Implementación de interfaces responsivas y accesibles de acuerdo con los requisitos de la ADA y las buenas prácticas de accesibilidad web.",
+          "Mejora de la calidad frontend mediante SEO, HTML semántico, optimización del rendimiento y experiencias consistentes en computadoras y dispositivos móviles."
+        ],
+        "keywords": [
+          "Vue.js",
+          "Nuxt",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "SCSS",
+          "Accesibilidad",
+          "SEO"
+        ]
+      },
+      {
+        "employer": "Banco Industrial",
+        "position": "Desarrollador Frontend",
+        "start": "2024-07",
+        "end": "2025-06",
+        "summary": "",
+        "highlights": [
+          "Conversión de diseños de Figma en componentes de interfaz responsivos y con precisión de píxel.",
+          "Contribución de componentes reutilizables a la biblioteca interna de componentes.",
+          "Integración y configuración de Storybook para documentar y probar visualmente los componentes de interfaz.",
+          "Mejora de la experiencia de desarrollo y la consistencia mediante una mejor documentación y guías de uso de los componentes."
+        ],
+        "keywords": [
+          "Angular",
+          "Jest",
+          "JavaScript",
+          "TypeScript",
+          "CSS",
+          "Git",
+          "Tailwind"
+        ]
+      },
+      {
+        "employer": "Wird",
+        "position": "Ingeniero de Software",
+        "start": "2022-09",
+        "end": "2024-07",
+        "summary": "",
+        "highlights": [
+          "Colaboración con el equipo de producto para comprender los requisitos y las especificaciones de negocio sobre gestión de portafolios, análisis y riesgo.",
+          "Mantenimiento de una extensión de Chrome para Gmail y Outlook utilizando TypeScript y Webpack.",
+          "Desarrollo y mejora de una extensión de Chrome para Gmail enfocada en el rendimiento."
+        ],
+        "keywords": [
+          "React.js",
+          "Kotlin",
+          "JavaScript",
+          "TypeScript",
+          "CSS",
+          "MySQL",
+          "Redis",
+          "Git",
+          "Docker",
+          "Webpack",
+          "Google Apps Script",
+          "Kubernetes"
+        ]
+      },
+      {
+        "employer": "International Excess Companies",
+        "position": "Desarrollador Full-Stack",
+        "start": "2018-02",
+        "end": "2022-09",
+        "summary": "",
+        "highlights": [
+          "Creación y mejora de módulos de aplicaciones web para aumentar la eficiencia y la satisfacción de los usuarios.",
+          "Integración de nuevas funcionalidades con Vue.js en el frontend y Laravel en el backend.",
+          "Reducción del tiempo de compilación del frontend en Vue.js en un 60 % mediante la optimización de Webpack.",
+          "Diseño y mejora de plantillas de correo electrónico para una visualización confiable en múltiples clientes de correo."
+        ],
+        "keywords": [
+          "Vue.js",
+          "Laravel",
+          "JavaScript",
+          "TypeScript",
+          "PHP",
+          "CSS",
+          "Bootstrap",
+          "MySQL",
+          "Redis",
+          "Git",
+          "GitHub",
+          "Docker",
+          "Webpack"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "POP Graphics",
+      "role": "Desarrollador principal",
+      "start": "2022",
+      "end": "2022",
+      "description": "Aplicación web para gestionar las órdenes de producción y los materiales de una empresa, mejorando la eficiencia de los procesos y el control operativo.",
+      "highlights": [
+        "Liderazgo del desarrollo de una aplicación web para agilizar el control de órdenes de producción y materiales.",
+        "Contenerización de la aplicación con Docker y preparación de su despliegue en DigitalOcean."
+      ],
+      "keywords": [
+        "Vue.js",
+        "Laravel",
+        "JavaScript",
+        "PHP",
+        "CSS",
+        "MySQL",
+        "Git",
+        "GitHub",
+        "DigitalOcean",
+        "Docker"
+      ]
+    }
+  ],
+  "education": {
+    "level": "degree",
+    "degree": "Licenciatura",
+    "history": [
+      {
+        "institution": "Universidad Mariano Gálvez",
+        "area": "Ingeniería en Sistemas",
+        "studyType": "Licenciatura",
+        "start": "2015",
+        "end": "2020",
+        "location": "Guatemala"
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Frontend",
+        "skills": [
+          "Vue.js",
+          "Nuxt",
+          "React.js",
+          "Next.js",
+          "Angular",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "SCSS",
+          "Tailwind"
+        ]
+      },
+      {
+        "name": "Backend y datos",
+        "skills": [
+          "Laravel",
+          "PHP",
+          "Kotlin",
+          "MySQL",
+          "Redis"
+        ]
+      },
+      {
+        "name": "Herramientas y prácticas",
+        "skills": [
+          "Git",
+          "Docker",
+          "Kubernetes",
+          "Webpack",
+          "Vite",
+          "Storybook",
+          "Jest",
+          "CI/CD",
+          "Accesibilidad",
+          "SEO"
+        ]
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Español",
+      "level": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "level": "Avanzado"
+    }
+  ],
+  "courses": [
+    {
+      "name": "SEO",
+      "provider": "Platzi",
+      "date": "2026-01"
+    },
+    {
+      "name": "Next.js",
+      "provider": "Platzi",
+      "date": "2023-11"
+    },
+    {
+      "name": "5 leyes de UI/UX",
+      "provider": "Platzi",
+      "date": "2021-08"
+    },
+    {
+      "name": "JavaScript",
+      "provider": "Platzi",
+      "date": "2021-03"
+    },
+    {
+      "name": "React y Redux",
+      "provider": "Udemy",
+      "date": "2020-12"
+    }
+  ]
+}

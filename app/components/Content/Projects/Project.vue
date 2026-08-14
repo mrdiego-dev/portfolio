@@ -6,6 +6,11 @@ const { t } = useI18n();
 
 const isOpen = ref(false);
 
+interface Repository {
+  label: string;
+  url: string;
+}
+
 function closeModal() {
   isOpen.value = false;
 }
@@ -13,11 +18,12 @@ function openModal() {
   isOpen.value = true;
 }
 
-defineProps({
-  stack: { type: Array<string>, required: true },
-  image: { type: String, required: false },
-  index: { type: Number, required: true },
-});
+defineProps<{
+  stack: string[];
+  image?: string;
+  index: number;
+  repositories?: Repository[];
+}>();
 </script>
 
 <template>
@@ -101,22 +107,26 @@ defineProps({
 
                 <div class="md:w-1/3 text-charcoal-gray">
                   <h2 class="text-xl font-bold mb-2">{{ t(`projects.${index}.title`) }}</h2>
-                  <div class="flex gap-2 items-center mb-4">
+                  <div class="flex flex-wrap gap-3 items-center mb-4">
                     <a
-                      v-if="t(`projects.${index}.github`) !== `projects.${index}.github`"
-                      class="text-dark-turquoise hover:text-teal-blue"
-                      :href="t(`projects.${index}.github`)"
+                      v-for="repository in repositories"
+                      :key="repository.url"
+                      class="inline-flex items-center gap-1 text-dark-turquoise hover:text-teal-blue"
+                      :href="repository.url"
                       target="_blank"
-                      aria-label="Project in GitHub (opens in a new tab)"
-                      title="GitHub"
+                      rel="noopener noreferrer"
+                      :aria-label="`${repository.label} repository on GitHub (opens in a new tab)`"
+                      :title="`${repository.label} repository on GitHub`"
                     >
                       <GitHub />
+                      <span class="text-sm font-medium">{{ repository.label }}</span>
                     </a>
                     <a
                       v-if="t(`projects.${index}.demo`) !== `projects.${index}.demo`"
                       class="text-dark-turquoise hover:text-teal-blue"
                       :href="t(`projects.${index}.demo`)"
                       target="_blank"
+                      rel="noopener noreferrer"
                       aria-label="Project Demo (opens in a new tab)"
                       title="Demo"
                     >

@@ -1,10 +1,35 @@
 <script setup lang="ts">
-const { t } = useI18n();
+import type { ResumeJob, ResumeLocale } from "@/types/resume";
 
-defineProps({
-  achievements: { type: Array<string>, required: true },
-  stack: { type: Array<string>, required: true },
-  index: { type: Number, required: true },
+const props = defineProps<{
+  job: ResumeJob;
+  locale: ResumeLocale;
+}>();
+
+const presentLabels: Record<ResumeLocale, string> = {
+  en: "Present",
+  es: "Actual",
+};
+
+const formatDate = (value?: string) => {
+  if (!value) return presentLabels[props.locale];
+  if (/^\d{4}$/.test(value)) return value;
+
+  const match = /^(\d{4})-(\d{2})$/.exec(value);
+  if (!match) return value;
+
+  const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, 1));
+  const formattedDate = new Intl.DateTimeFormat(props.locale, {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+
+  return formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+};
+
+const dateRange = computed(() => {
+  return `${formatDate(props.job.start)} - ${formatDate(props.job.end)}`;
 });
 </script>
 
@@ -15,27 +40,32 @@ defineProps({
     ></div>
 
     <time class="mb-1 text-sm font-normal leading-none text-light-gray">
-      {{ t(`experience.jobs.${index}.startDate`) }} - {{ t(`experience.jobs.${index}.endDate`) }}
+      {{ dateRange }}
     </time>
 
     <h3 class="text-lg">
-      <span class="font-semibold text-turquoise">{{ t(`experience.jobs.${index}.company`) }}</span>
+      <span class="font-semibold text-turquoise">{{ job.employer }}</span>
       -
-      <span>{{ t(`experience.jobs.${index}.title`) }}</span>
+      <span>{{ job.position }}</span>
     </h3>
 
     <ul class="mt-2 list-disc ml-4 list-outside">
-      <li class="text-gray-400 text-justify" v-for="(achievement, aIndex) in achievements">
-        {{ t(`experience.jobs.${index}.achievements.${aIndex}`) }}
+      <li
+        v-for="achievement in job.highlights"
+        :key="achievement"
+        class="text-gray-400 text-justify"
+      >
+        {{ achievement }}
       </li>
     </ul>
 
     <div class="flex flex-wrap gap-2 mt-3">
       <div
+        v-for="technology in job.keywords"
+        :key="technology"
         class="flex items-center rounded-full bg-dark-turquoise/70 px-2 py-1 text-xs font-medium leading-4 text-light-gray"
-        v-for="(tech, tIndex) in stack"
       >
-        {{ t(`experience.jobs.${index}.stack.${tIndex}`) }}
+        {{ technology }}
       </div>
     </div>
   </li>

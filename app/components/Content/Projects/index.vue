@@ -6,6 +6,13 @@
 
 <template>
   <Section id="projects" title="Projects">
-    <Project v-for="(project, index) in projects" :stack="project.stack" :image="project.image" :index="index" />
+    <Project
+      v-for="(project, index) in projects"
+      :key="project.title"
+      :stack="project.stack"
+      :image="project.image"
+      :repositories="project.repositories"
+      :index="index"
+    />
   </Section>
 </template>

@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Atom Challenge – Constructor de Flujos con Agentes de IA",
+    description:
+      "Un proyecto colaborativo de hackathon para crear visualmente flujos de agentes de IA, donde agentes especializados procesan solicitudes y pasan sus resultados al siguiente nodo.",
+    details:
+      "Construí este proyecto con un compañero y me enfoqué principalmente en el backend: un motor de ejecución con Fastify y TypeScript que valida y ejecuta flujos guardados, dirige las solicitudes entre agentes orquestadores, validadores, especialistas y genéricos mediante Genkit y OpenAI, y persiste los datos con Firebase. El frontend en Angular ofrece un editor basado en nodos y un chat en vivo.",
+    stack: ["Angular", "TypeScript", "Tailwind CSS", "ngx-vflow", "Fastify", "Genkit", "OpenAI", "Firebase"],
+  },
+  {
     title: "Pokémon Team Builder",
     description:
       "Una aplicación para construir equipos Pokémon hecha con React y Redux que te permite elegir un equipo de hasta 6 Pokémon.",
