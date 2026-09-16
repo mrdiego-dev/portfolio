@@ -86,7 +86,7 @@ const coursesSection = `<hr>
 <section id="courses">
   ${sectionHeader(labels.courses)}
   <ul>${resume.courses.map(({ name, provider, date }) =>
-    `<li><strong>${escapeHtml(name)}</strong> — ${escapeHtml(provider)} (${escapeHtml(formatDate(date))})</li>`
+    `<li><strong>${escapeHtml(name)}</strong> - ${escapeHtml(provider)} (${escapeHtml(formatDate(date))})</li>`
   ).join("")}</ul>
 </section>`;
 
@@ -163,6 +163,7 @@ try {
   run("hackmyresume", ["build", resumePath, "TO", htmlPath, "--theme", "compact"]);
 
   const html = localizeThemeHtml(readFileSync(htmlPath, "utf8"))
+    .replace(/—|&mdash;|&#0*8212;|&#x0*2014;/gi, "-")
     .replace(
       '<hr>\n            <section id="skills">',
       `${profilesSection}\n            <hr>\n            <section id="skills">`,

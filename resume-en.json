@@ -33,7 +33,8 @@
         "employer": "FullStack Labs",
         "position": "Senior Software Engineer",
         "start": "2025-06",
-        "summary": "Client project: SIDEARM Sports — Frontend Developer working on web platforms for collegiate sports organizations, focused on building scalable, responsive, accessible, and maintainable frontend experiences.",
+        "end": "2026-09",
+        "summary": "Client project: SIDEARM Sports. Frontend Developer working on web platforms for collegiate sports organizations, focused on building scalable, responsive, accessible, and maintainable frontend experiences.",
         "highlights": [
           "Develop and maintain frontend applications using Vue.js, Nuxt, TypeScript, JavaScript, HTML, and SCSS.",
           "Contribute to the migration of websites from Vue.js to Nuxt, modernizing the frontend architecture and improving maintainability and development workflows.",
@@ -161,6 +162,7 @@
     "history": [
       {
         "institution": "Universidad Mariano Gálvez",
+        "title": "Bachelor's degree in Computer Engineering",
         "area": "Computer Engineering",
         "studyType": "Bachelor's degree",
         "start": "2015",
