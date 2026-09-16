@@ -30,6 +30,34 @@
   "employment": {
     "history": [
       {
+        "employer": "Independent / Freelance",
+        "position": "Freelance Full-Stack Developer",
+        "start": "2023",
+        "summary": "Design, development, and deployment of custom web solutions for businesses and sporting events, covering frontend development, backend APIs, integrations, performance, and SEO.",
+        "highlights": [
+          "Build and maintain custom web solutions, taking projects from requirements and UI implementation through backend integration and production deployment.",
+          "Developed an interactive promotional roulette application for Denny’s using Laravel, including the campaign logic and supporting backend workflows.",
+          "Built web platforms for El Marinero and Copa Quetzal using Nuxt/Vue frontends and Fastify/Node.js APIs, integrating Airtable as the content and data backend for El Marinero.",
+          "Improved discoverability and user experience through responsive design, SEO, accessibility, and performance optimization."
+        ],
+        "keywords": [
+          "Vue.js",
+          "Nuxt",
+          "TypeScript",
+          "JavaScript",
+          "Node.js",
+          "Fastify",
+          "Laravel",
+          "PHP",
+          "Airtable",
+          "Tailwind CSS",
+          "SEO",
+          "Cloudflare",
+          "DigitalOcean",
+          "Docker"
+        ]
+      },
+      {
         "employer": "FullStack Labs",
         "position": "Senior Software Engineer",
         "start": "2025-06",
@@ -196,7 +224,10 @@
           "PHP",
           "Kotlin",
           "MySQL",
-          "Redis"
+          "Redis",
+          "Node.js",
+          "Fastify",
+          "Airtable"
         ]
       },
       {
