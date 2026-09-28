@@ -30,34 +30,6 @@
   "employment": {
     "history": [
       {
-        "employer": "Independiente / Freelance",
-        "position": "Desarrollador Full-Stack Freelance",
-        "start": "2023",
-        "summary": "Diseño, desarrollo y despliegue de soluciones web personalizadas para empresas y eventos deportivos, abarcando frontend, APIs, integraciones, rendimiento y SEO.",
-        "highlights": [
-          "Desarrollo y mantenimiento de soluciones web personalizadas, desde el análisis de requerimientos y la implementación de interfaces hasta la integración del backend y el despliegue en producción.",
-          "Desarrollo de una aplicación interactiva de ruleta promocional para Denny’s utilizando Laravel, incluyendo la lógica de la campaña y los procesos de backend.",
-          "Creación de plataformas web para El Marinero y Copa Quetzal utilizando Nuxt/Vue en el frontend y APIs con Fastify/Node.js, integrando Airtable como backend de contenido y datos para El Marinero.",
-          "Mejora de la visibilidad y experiencia de usuario mediante diseño responsivo, SEO, accesibilidad y optimización del rendimiento."
-        ],
-        "keywords": [
-          "Vue.js",
-          "Nuxt",
-          "TypeScript",
-          "JavaScript",
-          "Node.js",
-          "Fastify",
-          "Laravel",
-          "PHP",
-          "Airtable",
-          "Tailwind CSS",
-          "SEO",
-          "Cloudflare",
-          "DigitalOcean",
-          "Docker"
-        ]
-      },
-      {
         "employer": "FullStack Labs",
         "position": "Ingeniero de Software Senior",
         "start": "2025-06",
